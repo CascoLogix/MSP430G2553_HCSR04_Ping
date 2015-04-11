@@ -41,7 +41,7 @@
 #define LED1_OFF					(LED1_PORT_OUT &= ~LED1_PIN)
 
 
-#define SMCLK_PRESCALER				(1)
+#define SMCLK_PRESCALER				(8)
 #define SMCLK_FREQUENCY				(_FCPU / SMCLK_PRESCALER)					// _FCPU in MHz
 
 
@@ -113,6 +113,8 @@ int main(void)
 	setupTimerA0();
 	setupTimerA0CCR0Tick();
 	startTimerA0CCR0Tick();
+
+	_delay_cycles(800000);		// Allow time for ping module to initialize
 
 	_EINT();
 

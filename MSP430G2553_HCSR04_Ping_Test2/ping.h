@@ -26,11 +26,11 @@
 //	Defines
 /******************************************************************************/
 //Put defines here
-#define PING_PORT_OUT 				(P2OUT)
-#define PING_PORT_DIR 				(P2DIR)
-#define PING_ECHO_SEL				(P2SEL)
-#define PING_TRIG_PIN 				(BIT1)
-#define PING_ECHO_PIN 				(BIT0)
+//#define PING_PORT_OUT 				(P2OUT)
+//#define PING_PORT_DIR 				(P2DIR)
+//#define PING_ECHO_SEL				(P2SEL)
+//#define PING_TRIG_PIN 				(BIT1)
+//#define PING_ECHO_PIN 				(BIT0)
 /******************************************************************************/
 //	End Defines
 
